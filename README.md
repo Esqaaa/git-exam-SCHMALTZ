@@ -124,6 +124,3 @@ Vous devez :
 
 
 Modification aléatoire du README comme demandé !
-
-
-Git revert sera plus approprié car il supprime uniquement le commit précédent tandis que Git reset réinitialise la branche complète, or on ne veut pas ça.
