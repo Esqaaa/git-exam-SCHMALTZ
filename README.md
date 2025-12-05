@@ -123,4 +123,4 @@ Vous devez :
 2. Expliquer la différence entre les deux commandes.
 
 
-Modification aléatoire du README comme demandé !
+Le choix le plus judicieux est le GIT REVERT car il supprime uniquement le commit précédent, tandis que GIT RESET réinitialise la branche complète, or on ne veut pas celà. J'ai donc décidé de choisir la commande GIT REVERT plutôt que GIT RESET
