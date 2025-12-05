@@ -123,4 +123,7 @@ Vous devez :
 2. Expliquer la différence entre les deux commandes.
 
 
-Le choix le plus judicieux est le GIT REVERT car il supprime uniquement le commit précédent, tandis que GIT RESET réinitialise la branche complète, or on ne veut pas celà. J'ai donc décidé de choisir la commande GIT REVERT plutôt que GIT RESET
+- git revert : annule un commit en créant un nouveau commit qui inverse ses changements. L’historique reste intact. C’est la méthode recommandée quand le commit a déjà été poussé et partagé, car elle ne casse pas la collaboration.
+- git reset : ramène le dépôt à un état précédent en effaçant des commits de l’historique local. On aura 3 options (--soft, --mixed, --hard) et suivant l'option choisie, les modifications peuvent rester en staging, dans le dossier de travail, ou être supprimées. C’est utile pour corriger localement avant de pousser, mais dangereux si on l’utilise après avoir partagé des commits, car on réécrit alors l’historique.
+
+Je vais donc utiliser la commande GIT REVERT plutôt que GIT RESET.
