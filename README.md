@@ -126,4 +126,4 @@ Vous devez :
 - git revert : annule un commit en créant un nouveau commit qui inverse ses changements. L’historique reste intact. C’est la méthode recommandée quand le commit a déjà été poussé et partagé, car elle ne casse pas la collaboration.
 - git reset : ramène le dépôt à un état précédent en effaçant des commits de l’historique local. On aura 3 options (--soft, --mixed, --hard) et suivant l'option choisie, les modifications peuvent rester en staging, dans le dossier de travail, ou être supprimées. C’est utile pour corriger localement avant de pousser, mais dangereux si on l’utilise après avoir partagé des commits, car on réécrit alors l’historique.
 
-Je vais donc utiliser la commande GIT REVERT plutôt que GIT RESET.
+Je vais donc utiliser la commande git revert plutôt que git reset, car dans notre contexte collaboratif il est essentiel de conserver l’historique des modifications. De cette manière, on garde une trace claire du commit initial tout en ajoutant un nouveau commit correctif, ce qui évite de perturber le travail des autres membres de l’équipe
