@@ -20,3 +20,5 @@ func main() {
 	http.HandleFunc("/color", ColorHandler)
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
+
+// J'ai mis exercice 3 donc j'ai modifié en rajoutant cette ligne de commentaire.
